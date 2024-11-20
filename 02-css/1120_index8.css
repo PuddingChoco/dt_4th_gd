@@ -1,0 +1,31 @@
+.square {
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    display: inline-block;
+    text-align: center;
+    line-height: 100px;
+  }
+  
+  .d-none {
+    /* display: none; */
+    background-color: rgb(10, 185, 243);
+  }
+  
+  .invisible {
+    /* visibility: hidden; */
+    background-color: lightskyblue;
+  }
+  .invisible:hover {
+    background-color: red;
+  }
+  
+  .opacity-0 {
+    /* opacity: 0; */
+    background-color: lightcyan;
+  }
+  .opacity-0:hover {
+    background-color: red;
+  }
+  
+  /* 마우스를 갖다대면 커서부터 모양이 다르다! */

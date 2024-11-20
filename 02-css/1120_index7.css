@@ -1,0 +1,80 @@
+/* 웹 폰트 (web-font) */
+/* 
+    - 구글 웹 폰트, 눈누 웹 폰트 (대중적)
+    - 모든 브라우저에서 보는 폰트를 통일
+    - 폰트를 다운로드 하는 것이 아니라 link 태그에 걸려 있는 주소에서 폰트를 가져오는 방식
+    - 보통 기본 폰트는 body, *, root, html 등등 태그에 작성.
+*/
+
+/* #2. 눈누 폰트 적용 */
+@font-face {
+    font-family: "establishRetrosansOTF";
+    src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2112@1.0/establishRetrosansOTF.woff")
+      format("woff");
+    font-weight: normal;
+    font-style: normal;
+  }
+  /* 
+      @font-face 
+      - CSS에서 웹폰트를 정의하기 위해 사용되는 규칙!
+      - 이를 통해 웹사이트에 사용자 정의 폰트를 추가 하고,
+      사용자 기기에 폰트가 설치되어 있지 않아도 사용할 수 있도록 폰트를 가져올 수 있음.
+  */
+  
+  body {
+    /* #1. 구글 폰트 적용 */
+    /* font-family: "Doto", sans-serif; */
+    /* "Doto 사용 , 없다면 sans-serif 대체*/
+    font-optical-sizing: auto;
+    /* 텍스트의 크기에 따라 글꼴 디자이너가 의도한 세부적인 모양으로 자동 조정 */
+    font-weight: 800;
+  }
+  
+  * {
+    /* #2. 눈누 폰트 적용 */
+    font-family: "establishRetrosansOTF";
+    font-weight: 300;
+  }
+  
+  div {
+    /* 색상 */
+    /* 글자색 */
+    color: rgb(249, 109, 109);
+  
+    /* 글자 크기 */
+    font-size: 30px;
+    /* font-size: 16px --- 기본 폰트 크기 */
+  
+    /* 
+      폰트 굵기
+      - lighter, normal, bold, bolder
+      - 100 ~ 900 (100 단위로)
+    */
+    font-weight: 200;
+  
+    /* 
+      폰트 모양
+      - normal, italic, oblique
+    */
+    font-style: oblique 45deg;
+  
+    /* 
+      정렬
+      - center, left, right, justify(양쪽 정렬) - 기본 값
+    */
+    text-align: center;
+  
+    /* 
+      글자선
+      - underline, line-through, overline, none
+    */
+    /* text-decoration: underline; */
+    /* text-decoration: line-through; */
+    /* text-decoration: overline; */
+  
+    /* 
+      줄 높이
+      - px, 1.2(default)
+    */
+    /* line-height: 4; */
+  }

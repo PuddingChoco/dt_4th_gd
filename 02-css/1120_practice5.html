@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 속성 실습 5</title>
+    <style>
+        /* 1. 눈누 */
+        @font-face {
+        font-family: 'Cafe24Meongi-W-v1.0';
+        src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2405-3@1.1/Cafe24Meongi-W-v1.0.woff2') format('woff2');
+        font-weight: normal;
+        font-style: normal;
+    }
+    
+        .noonnu {
+            font-family:'Cafe24Meongi-W-v1.0';
+            font-size: 30px;
+        }
+
+        .google {
+            font-family: "Dancing Script", cursive;
+            font-optical-sizing: auto;
+        }
+    </style>
+
+    <!-- 2. 구글 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Doto:wght@100..900&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <p class="noonnu">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vestibulum placerat imperdiet. Donec auctor blandit nisi eget maximus. Proin nec ante dignissim, auctor neque sed, rutrum odio. Proin ut sem sit amet leo vehicula porttitor quis fermentum orci. Fusce vehicula sem suscipit convallis vestibulum. Nulla vel nulla nec mauris laoreet aliquam et eu quam. Aliquam nibh tellus, rutrum ut ex sit amet, ultrices semper est. 
+    </p>
+
+    <p class="google">
+        In lacinia, nunc ut sollicitudin sollicitudin, eros purus tristique arcu, nec convallis libero justo in ipsum. Cras in nisl porttitor, euismod eros nec, volutpat ante. Donec quam tortor, elementum et lacus et, iaculis tincidunt odio. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Praesent varius consectetur varius. Donec sed volutpat lacus. Aenean at orci vitae sapien finibus tempor sit amet vel dolor.
+    </p>
+</body>
+</html>

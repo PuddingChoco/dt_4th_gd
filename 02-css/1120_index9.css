@@ -1,0 +1,59 @@
+/*
+브라우저 초기화(CSS리셋): 모든 요소의 기본 여백과 안쪽 여백을 제거하는 스타일
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+또는 
+
+body {
+
+} 
+
+왜 사용? --> 
+- 보다 일관된 디자인을 구현하기 위해
+- 브라우저마다 기본으로 제공하는 여백 스타일일 다를 수 있으므로, 이를 초기화해 동일한 스타일링 환경을 만듭니다.
+
+인터넷 참고: CSS 노멀라이즈 라이브러리
+-> 요새는 라이브러리들 많아서 얘네들 이용함.
+*/
+
+/* 
+    overflow
+    - 컨텐츠가 너무 크거나 / 길어서 크기보다 넘치게 된다면?
+
+    - visible(default) : 벗어난 부분 표시
+    - hidden : 벗어난 부분 숨김
+    - scroll : 스크롤 생성.
+    - auto : 넘친다면 스크롤, 안넘치면 스크롤 X
+*/
+
+/* overflow-x : 수평 방향으로 넘칠 때 처리 */
+/* overflow-y : 수직 방향으로 넘칠 때 처리 */
+
+.box {
+    width: 500px;
+    height: 200px;
+    background-color: skyblue;
+  
+    /* overflow: visible; */
+    /* overflow: hidden; */
+    /* overflow: scroll; */
+    /* overflow: auto; */
+  
+    /* overflow-y: visible; */
+    /* overflow-y: hidden; */
+    /* overflow-x: hidden; */
+    /* overflow-x: scroll; */
+  }
+  
+  /* 텍스트의 공백과 줄바꿈(개행)을 처리하는 방식 제어하는 CSS 속성 */
+  .no-wrap {
+    /* white-space: nowrap; */
+  }
+  
+  /* white-space: normal(defalut); */
+  /* - 개행 */
