@@ -1,0 +1,41 @@
+.container {
+    width: 500px;
+    height: 500px;
+    background-color: pink;
+    position: relative;
+}
+
+.item {
+    width: 100px;
+    height: 100px;
+}
+
+.one {
+    position: relative;
+    left: 50px;
+    top: 30px;
+    background-color: red;
+    color: white;
+    line-height: 100px;
+    text-align: center;
+}
+
+.two {
+    position: absolute;
+    right: 30px;
+    bottom: 100px;
+    background-color: blue ;
+    color: white;
+    line-height: 100px;
+    text-align: center;
+}
+
+.three {
+    position: fixed;
+    right: 100px;
+    top: 100px;
+    background-color: green;
+    color: white;
+    line-height: 100px;
+    text-align: center;
+}

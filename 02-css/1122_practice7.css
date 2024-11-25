@@ -1,0 +1,41 @@
+.container {
+    width: 500px;
+    height: 500px;
+    background-color: lightblue;
+    display: flex;
+    flex-wrap: wrap;
+
+.item {
+    width: 100px;
+    height: 100px;
+    color: white;
+    text-align: center;
+    line-height: 100px;
+    font-weight: 700;
+    
+}
+
+.one {
+    background-color: red;
+}
+.two {
+    background-color: orange;
+}
+.three {
+    background-color: yellow;
+}
+.four {
+    background-color: green;
+}
+.five {
+    background-color: blue;
+}
+.six {
+    background-color: darkblue;
+}
+.seven {
+    background-color: purple;
+}
+.eight {
+    background-color: hotpink;
+}
