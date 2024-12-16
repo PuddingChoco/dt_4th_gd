@@ -1,0 +1,40 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+    margin-top: 50px;
+}
+
+.item {
+    width: 100px;
+    height: 100px;
+    background-color: lightblue;
+    border: 1px solid black;
+}
+
+.one:hover {
+    transform-origin: left top;
+    transform: scaleX(2);
+    transition: transform 1s;
+}
+
+.two:hover {
+    transform-origin: left bottom;
+    transform: skewX(-45deg);
+    transition: transform 1s;
+}
+
+.three:hover {
+    transform: translateX(300px) rotate(360deg);
+    /* transform: rotateZ(360deg); */
+    /* transition: transform linear 1s; */
+    transition: 2s;
+    border-radius: 50%;
+    background-color: red;
+}
+
+.four:hover {
+    background-color: yellow;
+    transition: 2s;
+    transform: scale(2) rotateY(360deg);
+}

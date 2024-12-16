@@ -10,7 +10,7 @@
     margin: 0;
 }
 
-.head {
+.header {
     width: 60px;
     height: 60px;
     background-color: aquamarine;
@@ -19,4 +19,6 @@
     text-align: center;
     line-height: 60px;
 }
+
+.header .
 

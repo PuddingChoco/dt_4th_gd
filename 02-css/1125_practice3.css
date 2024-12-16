@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* .container {
+    width: 100%;
+    height: 700px;
+    background-color: aquamarine;
+    position: relative;
+} */
+
+.ball {
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(30deg,white, green, red);
+    border-radius: 50%;
+    position: absolute;
+
+    animation-name: Sun;
+    animation-duration: 10s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes Sun {
+/* 왼 -> 오 */
+
+    0% {
+        left: 0;
+        transform: rotate(0deg);
+    }
+
+    25% {
+        top: 0;
+        left: calc(100vw - 100px);
+        transform: rotate(90deg);
+    }
+
+    50% {
+        left: calc(100vw - 100px);
+        top: calc(100vh - 100px);
+        transform: rotate(180deg);
+    }
+
+    75% {
+        left: 0;
+        top: calc(100vh - 100px);
+        transform: rotate(270deg);
+    }
+    
+    100% {
+        left: 0;
+        top: 0;
+        transform: rotate(360deg);
+    }
+}
+/* 오위 -> 오아래 */
+    /* 0% {
+        top: 0px;
+    }
+
+    50% {
+        top: 50%;
+        right:
+    }
+
+    100% {
+        top: 0px;
+    } */

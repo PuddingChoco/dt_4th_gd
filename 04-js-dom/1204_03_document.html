@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="./1204_03_document.js" defer></script>
+    <!-- defer: JS 파일이 페이지 로딩과 동시에 비동기적으로 실행되도록 지시하는 역할 "나 기다리지 말고 진행되는동안 밑에것도 해" -->
+
+    <!-- defer 안써주면 6번째 줄 자바스크립트가 끝날때까지 아래것들 (body 등)이 진행이 안됨 -->
+
+    <!-- defer 속성을 사용하면 스크립트가 페이지의 **HTML 파싱이 끝날 때까지 실행되지 않음 -->
+
+    <!-- - defer 속성을 사용하면 스크립트가 페이지의 **HTML 파싱이 끝날 때까지 실행되지 않음. 파싱이 끝난 후 비로소 실행됨. -->
+
+    <!-- * 비동기적 : 스크립트가 로드되는 동안 다른 작업들이 동시에 진행될 수 있다는 의미. -->
+
+    <!-- ** HTML 파싱(HTML Parsing) : 웹 브라우저가 HTML 문서를 읽고, 이를 DOM 트리로 변환하는 과정. -->
+
+    <title>Document</title>
+    <style>
+      div {
+        width: 100px;
+        height: 100px;
+        border-radius: 10px;
+        border: 1px solid #333;
+        margin: 10px;
+        text-align: center;
+        line-height: 100px;
+      }
+
+      .pink {
+        background-color: pink;
+      }
+
+      #green {
+        background-color: green;
+      }
+
+      #red {
+        background-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>DOM 연습</h1>
+    <div class="pink">1</div>
+    <div class="pink">2</div>
+    <div class="pink">3</div>
+    <div class="pink">4</div>
+    <div class="others" id="green"></div>
+    <div class="others" id="red"></div>
+
+    <input type="text" name="id" />
+    <input type="button" name="id" value="click" />
+  </body>
+</html>

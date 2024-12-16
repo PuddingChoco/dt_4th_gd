@@ -1,0 +1,41 @@
+div {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+
+}
+
+p {
+    position: absolute;
+
+    animation-name: paragraph;
+    animation-delay: 2s;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes paragraph {
+    0% {
+        left: 100vw;
+        height: 20vh;
+        animation-timing-function: ease-in;
+  
+
+    }
+    70% {
+        left: 50vw;
+        animation-timing-function: linear;
+ 
+    
+        
+    }
+
+    100% {
+        left: 0vw;
+        height: 100vh;
+        animation-timing-function: ease-in;
+        
+  
+    }
+}
+

@@ -1,0 +1,31 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+@media (min-width: 500px) {
+    body {
+        background-color: lightblue;
+    }
+}
+
+@media (max-width: 300px) {
+    body {
+        background-color: orange;
+    }
+
+}
+
+@media screen and (max-height: 300px) {
+    p {
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 1em;
+        font-style: italic;
+    }
+}
+
+@media screen and (min-height: 500px) {
+    p {
+        background-color: green;
+    }
+}
+

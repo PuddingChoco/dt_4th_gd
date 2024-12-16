@@ -1,0 +1,44 @@
+.header {
+    background-color: black;
+    width: 100vh;
+    height: 20vh;
+}
+
+.section {
+    background-color: white;
+}
+
+.aside {
+    background-color: blue;
+}
+
+@media (max-width: 768px) {
+    .header {
+        
+    }
+}
+
+/* @media (max-width: 480px) {
+    /* Viewport width가 480px 이하 일 때 */
+    .header {
+        height: 50px;
+    }
+
+    .main {
+        flex-direction: column-reverse;
+    }
+
+    .aside {
+        width: 100%;
+        height: 50px;
+    }
+
+    .section {
+        width: 100%;
+        height: 50px;
+    }
+
+    .footer {
+        height: 50px;
+    }
+} */
