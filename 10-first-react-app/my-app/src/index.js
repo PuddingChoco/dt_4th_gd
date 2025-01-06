@@ -3,12 +3,44 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
 import Clock from "./Clock";
+import Pet from "./Pet";
+import Conditional from "./Conditional";
+import Larger from "./Larger";
+import Practice from "./Practice";
 // import reportWebVitals from './reportWebVitals';
+
+// const root = ReactDOM.createRoot(document.getElementById("root"));
+// root.render(
+//   <React.StrictMode>
+//     <App />
+//   </React.StrictMode>
+// );
+
+// const root = ReactDOM.createRoot(document.getElementById("root"));
+// root.render(
+//   <React.StrictMode>
+//     <Pet />
+//   </React.StrictMode>
+// );
+
+// const root = ReactDOM.createRoot(document.getElementById("root"));
+// root.render(
+//   <React.StrictMode>
+//     <Conditional />
+//   </React.StrictMode>
+// );
+
+// const root = ReactDOM.createRoot(document.getElementById("root"));
+// root.render(
+//   <React.StrictMode>
+//     <Larger />
+//   </React.StrictMode>
+// );
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <App />
+    <Practice />
   </React.StrictMode>
 );
 
