@@ -1,0 +1,90 @@
+// scss 니까 사용하던 문법으로 하면 됨
+// 파일명 대문자
+// - 해당 파일이 특정 react 컴포넌트와 밀접하게 연관된다는 것을 나타냄.
+
+// Sass styling
+
+// *CSS 전처리기 주요 기능
+// scss 컴파일러가 _붙은 애들을 자동적으로, 우선적으로 찾음 -> 그래서 여기서는 _입력 안해줘도 됨.
+@import "./variables";
+@import "./utils";
+
+// #1. 변수
+// $color-first: red;
+// $color-second: orange;
+// $color-third: yellow;
+// $animation-duration: 0.4s;
+// $breakpoint-sm: 360px;
+// #4. 믹스인(함수) 선언(정의) // 인자 없어도 됨!
+// @mixin box($size) {
+//     width: $size;
+//     height: $size;
+// }
+// #4-3. 믹스인 - 여러 개의 인자
+//중복으로 코드 작성안해도 되서 편함!!!
+@mixin text-style($color, $font-size, $font-weight) {
+  color: $color;
+  font-size: $font-size;
+  font-weight: $font-weight;
+}
+// 참고) (  ,   ,  ) 인자가 3개 들어가면 3개 맞춰서 넣어줘야함 -> 에러날 확률있음. 만약, 3개 인자 해놓고 2개만 쓸것같으면 -> 미리 기본값을 셋팅해줘서 없을경우 대신 그거 쓸 수 있도록 하면 됨 (방법은 찾아보기)
+
+// #2. 중첩 : 부모 자식 표현 가능
+.container {
+  display: flex;
+  .box {
+    // #4-2. 믹스인 호출(사용)
+    @include box(150px);
+    // ( ) 안에 매개변수 넣어주기, 꼭 매개변수(인수)가 들어가야하는것은 아님(?)
+    // width: 100px;
+    // height: 100px;
+
+    // &: 부모 선택자 참조해서 치환
+    // &.red = .box.red
+    &.red {
+      background-color: $color-first;
+      // #4-3.
+      @include text-style(blue, 20px, bold);
+    }
+    &.orange {
+      background-color: $color-second;
+      // #4-3
+      @include text-style(red, 25px, normal);
+    }
+    &.yellow {
+      background-color: $color-third;
+    }
+
+    &:hover {
+      background-color: pink;
+      //  $box-animation 이 변수는, 여기서만 사용하는것, $animation-duration 는 가져온 변수
+
+      // #3. 연산 가능
+      $box-animation: $animation-duration * 5;
+      transform: translateY(20px);
+      transition: transform $box-animation;
+    }
+  }
+}
+.btn {
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid black;
+}
+
+.btn-primary {
+  // #5. 상속 : 기존 선택자 스타일을 다른 선택자에 상속
+  @extend .btn;
+  background-color: blue;
+  color: white;
+}
+
+// #6. 문자열 보간 방법
+// #{} 구문을 사용하여 (표현식, 변수의 값)을 문자열 내에 삽입해서 동적으로 생성하는 방법.
+// media screen
+@media (max-width: $breakpoint-sm) {
+  // @media (max-width: 360px)
+  .container {
+    flex-direction: column;
+  }
+}

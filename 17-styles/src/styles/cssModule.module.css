@@ -1,0 +1,22 @@
+/* CSS Moduel Styling */
+/* 객체형태로 .css 형태로 쓰면 됨 */
+.container {
+  display: flex;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+}
+
+.red {
+  background-color: red;
+}
+
+.orange {
+  background-color: orange;
+}
+
+.yellow {
+  background-color: yellow;
+}
