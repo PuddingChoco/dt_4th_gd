@@ -10,6 +10,8 @@ import { createSlice } from "@reduxjs/toolkit";
  * - name: 슬라이스의 이름 정의 / 액션 타입의 네임스페이스로 사용
  * - initialState : 상태 초기값 정의
  * - reducers : 상태를 업데이트 하는 리듀서 함수 정의
+ * - 원래 리액트는 원본유지를 위해서 객체를 복사해서 변경해주었음 -> 근데, Redux Toolkit immer 덕분에 직접 변경 가능해짐.
+ * - 바로 실행하는거라서 return 필요 없음 (return은 반환되는 값이 있을때, 그리고 그 값이 다른데 연산되거나 쓰여야할때 씀)
  */
 const counterSlice = createSlice({
   name: "counter",
